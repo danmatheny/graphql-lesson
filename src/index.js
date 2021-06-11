@@ -52,6 +52,8 @@ const client = new ApolloClient({
 client.writeData({
   data: {
     cartHidden: true,
+    cartItems: [],
+    itemCount: 0,
   },
 });
 // In addition to letting us query a GraphQL backend, Apollo estabilishes a 'Local Cache', which allows us to do state managment, and we can query and mutate against the local cache, much like we would against a backend.
